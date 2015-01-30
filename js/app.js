@@ -1,6 +1,11 @@
 //Problem: user interaction doesnt provide desired results
 //Solution: Add interactivity so the user can amanage daily tasks
 
+var taskInput; //new task
+var addButton; //first button
+var incompleteTaskHolder; //incomplete-tasks
+var completedTasks; //completed-tasks
+
 //add a task
 var addTask = function(){
   //when the button is pressed, we want to create a task
