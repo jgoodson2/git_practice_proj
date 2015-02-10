@@ -8,6 +8,7 @@ var completedTasks=document.getElementById("completed-tasks"); //completed-tasks
 
 //add a task
 var addTask = function(){
+    console.log("Add task...");
   //when the button is pressed, we want to create a task
   //create a new list item with the text from the new task
   //input (checkbox)
