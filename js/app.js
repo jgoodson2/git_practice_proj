@@ -42,7 +42,7 @@ var deleteTask = function() {
 
 //mark a task as complete
 var taskComplete = function() {
-    console.log("Complete task...");
+    console.log("Task complete...");
 //when the checkbox is checked
     //append the task list item #completed-tasks
     }
