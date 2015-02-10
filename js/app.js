@@ -53,3 +53,7 @@ var taskIncomplete = function(){
   //when the checkbox is unchecked
     //append to #incomplete-tasks
     }
+    
+
+//Set the click handler to the addTask function
+addButton.onclick = addTask;
