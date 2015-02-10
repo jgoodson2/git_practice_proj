@@ -21,6 +21,7 @@ var addTask = function(){
   
 //edit a task
 var editTask = function(){
+    console.log("Edit task...");
   //when the edit button is pressed
     //if the class of the parent is .editMode
       //switch from .editMode
@@ -33,6 +34,7 @@ var editTask = function(){
 }
 
 var deleteTask = function() {
+    console.log("Delete task...");
 //delete existing task
   //when the delete button is pressed
     //remove the parent list item from the unordered list
@@ -40,12 +42,14 @@ var deleteTask = function() {
 
 //mark a task as complete
 var taskComplete = function() {
-  //when the checkbox is checked
+    console.log("Complete task...");
+//when the checkbox is checked
     //append the task list item #completed-tasks
     }
     
 //mark a task as incomplete
 var taskIncomplete = function(){
+    console.log("Task incomplete...");
   //when the checkbox is unchecked
     //append to #incomplete-tasks
     }
