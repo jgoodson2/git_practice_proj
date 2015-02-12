@@ -57,3 +57,21 @@ var taskIncomplete = function(){
 
 //Set the click handler to the addTask function
 addButton.onclick = addTask;
+
+var bindTaskEvents = function(taskListItem, checkboxEventHandler){
+  //select its children
+    //bind editTask to edit button
+    //bind deleteTask to delete button
+    //bind checkboxEventHandler to the checkbox
+    
+}
+
+
+
+//cycle over incompleteTaskHolder ul list items
+  //for each list item
+    //bind events to list item's children(taskCompleted)
+    
+//cycle over completeTaskHolder ul list items
+  //for each list item
+    //bind events to list item's children(taskIncomplete)
