@@ -1,5 +1,5 @@
 //Problem: User interaction doesn't provide desired results.
-//Solution: Add interactivty so the user can manage daily tasks.
+//Solution: Add interactivity so the user can manage daily tasks.
 
 var taskInput = document.getElementById("new-task"); //new-task
 var addButton = document.getElementsByTagName("button")[0]; //first button
@@ -55,14 +55,30 @@ var taskIncomplete = function() {
 }
 
 var bindTaskEvents = function(taskListItem, checkBoxEventHandler){
-  //select it children
+    console.log("Bind list item events");
+  //select taskListItem's children
+    var checkBox = taskListItem.querySelector("input[type=checkbox]");
+    var editButton = taskListItem.querySelector("button.edit");
+    var deleteButton = taskListItem.querySelector("button.delete");
+
     //bind editTask to editButton
+    editButton.onclick = editTask;
     //bind deleteTask to delete button
+    deleteButton.onclick = deleteTask;
     //bind checkBoxEventHandler to the checkbox
+    checkBox.onchange = checkBoxEventHandler;
 }
 
 //Set the click handler to the addTask function
 addButton.onclick = addTask;
+
+for(var i = 0; i < incompleteTasksHolder.children.length; i++){
+    bindTaskEvents(incompleteTasksHolder.children[i], taskCompleted);
+}
+
+for(var i = 0; i < completedTasksHolder.children.length; i++){
+    bindTaskEvents(completedTasksHolder.children[i], taskIncomplete);
+}
 
 //cycle over the IncompleteTasksHolder of list items
   //for each list item
